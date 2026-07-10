@@ -2,7 +2,7 @@
   "name": "rubby",
   "displayName": "Rubby",
   "description": "A cute pixel duck that keeps you company while you're coding.",
-  "version": "0.1.0",
+  "version": "0.1.0-beta.1",
   "preview": true,
   "publisher": "Gabriel-Amorim-dev",
   "license": "MIT",

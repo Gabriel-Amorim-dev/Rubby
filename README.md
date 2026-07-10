@@ -4,6 +4,8 @@
 
 # 🦆 Rubby
 
+<!-- TODO: Insert Extension icon here -->
+
 ### *Your pixel-art coding companion.*
 
 **Rubby lives in your VS Code sidebar and reacts to the health of your code.**
@@ -44,10 +46,11 @@ Quack quack! Happy coding!
 </td>
 <td>
 
-- [⚙️ Settings](#️-settings)
-- [🎮 Commands](#-commands)
-- [🛠️ Development](#️-development)
-- [🤝 Contributing](#-contributing)
+- ⚙️ [Settings](#️-settings)
+- 🎮 [Commands](#-commands)
+- 🛠️ [Development](#️-development)
+- 🗺️ [Roadmap](#️-roadmap)
+- 🤝 [Contributing](#-contributing)
 
 </td>
 </tr>
@@ -56,6 +59,9 @@ Quack quack! Happy coding!
 ---
 
 ## ✨ Features
+
+<!-- TODO: Insert Animated GIF demonstrating Rubby here -->
+<!-- TODO: Insert Screenshots here -->
 
 > *A lighthearted, pixel-art duck companion that reacts to the health of your code.*
 
@@ -191,6 +197,14 @@ npm run watch        # 👀 TypeScript watch mode
 npm run lint         # 🧹 lint
 npm test             # ✅ run tests
 ```
+
+---
+
+## 🗺️ Roadmap
+
+- [ ] Add more pixel-art duck states and animations.
+- [ ] Support custom sound effects and alerts.
+- [ ] Add interactive mini-games for when you're taking a break.
 
 ---
 
