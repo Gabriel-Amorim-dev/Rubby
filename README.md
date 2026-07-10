@@ -200,7 +200,7 @@ npm test             # ✅ run tests
 
 ---
 
-## 🗺️ Roadmap
+## 🗺️ Roadmap For Future Updates
 
 - [ ] Add more pixel-art duck states and animations.
 - [ ] Support custom sound effects and alerts.
