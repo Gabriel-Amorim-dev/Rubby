@@ -1,16 +1,40 @@
-{
+ {
   "name": "rubby",
   "displayName": "Rubby",
-  "icon": "media/duck.png",
-  "description": "A cute pixel duck that makes you company while you're coding.",
-  "version": "0.0.1",
+  "description": "A cute pixel duck that keeps you company while you're coding.",
+  "version": "0.1.0",
+  "preview": true,
+  "publisher": "Gabriel-Amorim-dev",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gabriel-Amorim-dev/Rubby.git"
+  },
+  "homepage": "https://github.com/Gabriel-Amorim-dev/Rubby",
+  "bugs": {
+    "url": "https://github.com/Gabriel-Amorim-dev/Rubby/issues"
+  },
   "engines": {
-    "vscode": "^1.125.0"
+  "vscode": "^1.125.0"
+  },
+  "icon": "media/duck.png",
+  "galleryBanner": {
+    "color": "#7EC8E3",
+    "theme": "light"
   },
   "categories": [
-    "Other"
+  "Other"
   ],
-  "activationEvents": [ ],
+  "keywords": [
+    "duck",
+    "coding",
+    "debugging",
+    "fun",
+    "productivity",
+    "pet",
+    "pixel-art"
+  ],
+  "activationEvents": [ "onStartupFinished" ],
   "main": "./out/extension.js",
   "contributes": {
     "configuration": {
