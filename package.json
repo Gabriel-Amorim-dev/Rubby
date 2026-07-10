@@ -1,0 +1,100 @@
+{
+  "name": "rubby",
+  "displayName": "Rubby",
+  "icon": "media/duck.png",
+  "description": "A cute pixel duck that makes you company while you're coding.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.125.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [ ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "configuration": {
+      "title": "Rubby",
+      "properties": {
+        "rubby.sadThreshold": {
+          "type": "number",
+          "default": 10,
+          "description": "Number of errors required for Rubby to become sad."
+        },
+        "rubby.scaredThreshold": {
+          "type": "number",
+          "default": 30,
+          "description": "Number of errors required for Rubby to become scared."
+        },
+        "rubby.idleSleepMinutes": {
+          "type": "number",
+          "default": 5,
+          "description": "Number of minutes of inactivity before Rubby falls asleep."
+        }
+      }
+    },
+    "viewsContainers": {
+      "panel": [
+        {
+          "id": "rubbyPanel",
+          "title": "Rubby",
+          "icon": "media/duck.png"
+        }
+      ]
+    },
+    "views": {
+      "rubbyPanel": [
+        {
+          "icon":"media/duck.png",
+          "id": "rubbyView",
+          "name": "Rubby",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "rubby.configureThresholds",
+        "title": "Rubby: Configure Thresholds"
+      },
+      {
+        "command": "rubby.talk",
+        "title": "Rubby: Talk to the Duck"
+      },
+      {
+          "command": "rubby.testHappy",
+          "title": "Rubby: Test Happy"
+      },
+      {
+          "command": "rubby.testSad",
+          "title": "Rubby: Test Sad"
+      },
+      {
+          "command": "rubby.testScared",
+          "title": "Rubby: Test Scared"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.125.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "24.x",
+    "typescript-eslint": "^8.61.1",
+    "eslint": "^10.5.0",
+    "typescript": "^6.0.3",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0"
+  },
+  "overrides": {
+    "diff": "^8.0.4",
+    "serialize-javascript": "^7.0.6"
+  }
+}
